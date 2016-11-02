@@ -66,13 +66,13 @@ export ARCH=arm64;
 export SUB_ARCH=arm64;
 
 # G920T
-if [ "$TARGET" = "G920T" ] ; then
-	export KERNEL_CONFIG="custom_defconfig";
+if [ "$TARGET" = "G920P" ] ; then
+	export KERNEL_CONFIG="exynos7420-zerofltespr_defconfig";
 fi;
 
 # G925T
-if [ "$TARGET" = "G925T" ] ; then
-	export KERNEL_CONFIG="custom-zeroltetmo";
+if [ "$TARGET" = "G920PP" ] ; then
+	export KERNEL_CONFIG="exynos7420-zeroltespr_defconfig";
 fi;
 
 # build script
